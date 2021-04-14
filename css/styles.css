@@ -1,0 +1,51 @@
+/* Estilos globais */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*border: 1px solid red;*/
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: url('../assets/background-img.jpg') top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Conteúdo */
+
+#container {
+	max-width: 1100px;
+}
+
+p.ref {
+	margin: 0;
+	padding: 0;
+	font-size: 0.8rem;
+	color: gray;
+}
+	
+/* Estilos do formulário */
+#div-form {
+	display: flex;
+	justify-content: center;
+	
+}
+
+form {
+	width: 700px;
+	border-top: 1px solid #2980b9;
+	padding-top: 25px;
+	border-radius: 5px;
+}
+
+button.btn-color {
+	background: #2980b9;
+	color: whitesmoke;
+	transition: filter 0.5s;
+}
+
+button.btn-color:hover {
+	filter: brightness(0.8);
+}
