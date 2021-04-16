@@ -2,6 +2,7 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -12,7 +13,7 @@
 		<link rel="icon" href="./assets/logo.png">
     	<link rel="stylesheet" href="./css/styles.css">
 
-    	<title>Send Mail</title>
+    	<title>Send mail</title>
 
 	</head>
 
@@ -22,7 +23,7 @@
 
 			<div id="div-header" class="py-3 text-center">
 				<img class="d-block mx-auto mb-2" src="./assets/logo.png" alt="Send Mail logo" width="72" height="72">
-				<h2>Send Mail</h2>
+				<h2>Send mail</h2>
 				<p class="lead">Seu app de envio de e-mails particular</p>
 				<p class="lead ref">Developed by 
 					<a href="https://linktr.ee/GilbertoASJ" target="blank_">
