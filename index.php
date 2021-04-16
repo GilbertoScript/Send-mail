@@ -32,11 +32,13 @@
 				</p>
 			</div>
 
+
       		<div class="row">
       			<div class="col-md-12">
   				
 					<div id="div-form" class="card-body font-weight-bold">
 						<form action="send-proccess.php" method="post">
+
 							<div class="form-group">
 								<label for="para">Para</label>
 								<input 
