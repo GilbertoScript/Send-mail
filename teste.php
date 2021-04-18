@@ -9,7 +9,6 @@
 </head>
 <body>
 
-	<form action="send-proccess.php" method="post">
 		<div class="form-group">
 			<label for="email">Email</label>
 			<input 
@@ -31,8 +30,5 @@
 				placeholder="Sua senha aqui"
 			>
 		</div>
-
-		<button type="submit" class="btn btn-color btn-lg" value="entrar">Entrar</button>
-	</form>
 </body>
 </html>
