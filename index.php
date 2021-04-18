@@ -95,7 +95,7 @@
 					<p align="justify">Para começar a usar o Send mail temos alguns pré-requisitos:</p>
 					<p align="justify">
 						Que você esteja planejando utilizar um Gmail, pois a aplicação ainda não possui suporte a outros tipos de serviços SMTP. <br /><br /> 
-						Que você aceite o acesso a aplicação menos restritas no seu Gmail, por <a href="#">aqui </a>não se preocupe, a aplicação é segura e você pode ativar essa funcionalidade apenas quando for mandar seus e-mails pelo Send mail.<br /><br /> 
+						Que você aceite o acesso a aplicação menos restritas no seu Gmail, por <a href="https://myaccount.google.com/lesssecureapps?gar=1&pli=1&rapt=AEjHL4M_gg12tOtYuAx4dqNCn3bpT4SXNB28HBpMRUvPKTTYMLVZPwkyDr_bZl4XKcuZybKETsSb1kMIK12Vy2E3oztY2ZSBFA">aqui </a>não se preocupe, a aplicação é segura e você pode ativar essa funcionalidade apenas quando for mandar seus e-mails pelo Send mail.<br /><br /> 
 						Insira e-mail e senha válidos, para que não ocorra nenhum erro ao fazer o envio dos emails.<br /> <br /> 
 						E para manter a aplicação mais segura e que não ocorra nenhum tipo de vazamento de dados, sempre quando for utilizar o Send mail, preencha corretamente os dois formulários, já que não armazenamos e nem recuperamos os dados do usuário em nenhum banco de dados, cache, cookies... É necessário que sempre preencha os campos de login e senha quando for utilizar o app.
 					</p>
