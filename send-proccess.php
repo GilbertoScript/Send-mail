@@ -14,10 +14,11 @@
 
 	class Mensagem {
 
-		/* Email e senha do arquivo teste.php, em produção... */
-		// private $email = null;
-		// private $senha = null;
+		// Primeiro form
+		private $email = null;
+		private $senha = null;
 
+		// Segundo form
 		private $para = null;
 		private $assunto = null;
 		private $mensagem = null;
@@ -44,8 +45,8 @@
 	$mensagem = new Mensagem();
 
 	// Atribuindo valores para $mensagem via dados recebidos pelo método POST:
-	// $mensagem->__set('email', $_POST['email']);
-	// $mensagem->__set('senha', $_POST['senha']);
+	$mensagem->__set('email', $_POST['email']);
+	$mensagem->__set('senha', $_POST['senha']);
 	$mensagem->__set('para', $_POST['para']);
 	$mensagem->__set('assunto', $_POST['assunto']);
 	$mensagem->__set('mensagem', $_POST['mensagem']);
@@ -76,14 +77,14 @@
 	    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
 
 	    ## Coloque nas duas linhas a seguir seu email e senha:
-	    $mail->Username   = 'email@teste.com';            //SMTP username
-	    $mail->Password   = 'senha123';                       			//SMTP password
+	    $mail->Username   = $mensagem->__get('email');            //SMTP username
+	    $mail->Password   = $mensagem->__get('senha');                       			//SMTP password
 	    $mail->SMTPSecure = 'tls';         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
 	    $mail->Port       = 587;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
 	    //Recipients
 	    ## Aqui informamos o remetente
-	    $mail->setFrom('email@teste.com');
+	    $mail->setFrom($mensagem->__get('email'));
 
 	    ## Aqui informamos o destinatário
 	    $mail->addAddress($mensagem->__get('para'));   				//Add a recipient
@@ -131,14 +132,9 @@
 	    ";
 	}
 
-	// ------------------------------------ / PHPMailer lib ---------------------------------------------- //
-
-	// echo "<pre>";
-	// 	print_r($mensagem);
-	// echo "</pre>";
+	// ----------------------------------- // PHPMailer lib ---------------------------------------------- //
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
