@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	/* Para debugar: */
 	/*border: 1px solid red;*/
 }
 
@@ -12,7 +13,6 @@ html {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	/* url('../assets/background-img.jpg') top center */
 	background: white;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -46,7 +46,6 @@ a {
 }
 
 /* Conteúdo */
-
 p.ref {
 	margin: 0;
 	padding: 0;
@@ -59,15 +58,28 @@ p.ref {
 #div-form {
 	display: flex;
 	justify-content: center;
-	
 }
 
 form {
-	width: 700px;
+	width: 800px;
 	border-top: 1px solid #2980b9;
 	padding-top: 25px;
 	border-radius: 5px;
+
+	justify-content: space-between;
 }
+
+form #primeiro-formulario {
+	padding: 25px;
+	border-right: 1px solid #2980b9;
+}
+
+form #segundo-formulario {
+	padding: 25px;
+	border-left: 1px solid #2980b9;
+}
+
+/* Botões */
 
 button.btn-color {
 	background: #2980b9;
@@ -79,3 +91,59 @@ button.btn-color:hover {
 	filter: brightness(0.8);
 }
 
+/* Media Queries */
+@media (min-width: 992px) {
+	.navbar-expand-lg {
+		justify-content: space-between;
+	}
+
+	.navbar-collapse {
+		flex-grow: inherit;
+	}
+}
+
+@media (max-width: 720px) {
+	/* Section Início */
+	section#inicio {
+		height: auto;
+	}
+
+	section h2 {
+		text-align: center;
+	}
+
+	section#inicio .row a {
+		width: 100%;
+	}
+
+	section#inicio img {
+		display: none;
+	}
+
+	/* Section Como usar */
+	section#como-usar {
+		height: auto;
+	}
+
+	/* Section Aplicativo */
+	section#aplicativo {
+		height: auto;
+	}
+
+	section#aplicativo #primeiro-formulario {
+		border: none;
+		border-bottom: 1px solid blue;
+	}
+
+	section#aplicativo #segundo-formulario {
+		border: none;
+	}
+
+	section#aplicativo #div-form form {
+		flex-direction: column;
+	}
+
+	section#aplicativo #div-form form #segundo-formulario button {
+		width: 100%;
+	}
+}

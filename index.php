@@ -15,29 +15,11 @@
 
     	<title>Send mail</title>
 
-    	<style type="text/css" media="screen">
-    		
-    		@media (min-width: 992px) {
-    			.navbar-expand-lg {
-    				justify-content: space-between;
-    			}
-
-    			.navbar-collapse {
-    				flex-grow: inherit;
-    			}
-    		}
-
-    		@media (max-width: 720px) {
-    			
-    		}
-    		
-
-    	</style>
+    	<style type="text/css" media="screen"></style>
 
 	</head>
 
 	<body>
-
 
 		<!-- Header -->
 		<header class="container-fluid bg-blue">
@@ -71,7 +53,7 @@
 		<!-- / Header -->
 
 		<!-- Início -->
-		<div id="inicio" class="container">
+		<section id="inicio" class="container">
 			<div class="row mt-3">
 				<div class="col-md-12">
 					<div id="div-header" class="py-3 text-center">
@@ -94,11 +76,11 @@
 					<img src="./assets/email-image.png" alt="Imagem de email" class="img-fluid mt-3">
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- / Início -->
 
 		<!-- Como usar -->
-		<div id="como-usar" class="container-fluid border-top border-container">
+		<section id="como-usar" class="container-fluid border-top border-container">
 			<div class="row pl-5 pr-5">
 				<div class="col-md-12">
 					<h2 class="text-center mt-5">Como usar</h2>
@@ -106,6 +88,7 @@
 			</div>
 
 			<div class="row pl-5 pr-5">
+				<!-- Passo 1 -->
 	      	<div class="col-md-6 mt-4 border-right border-primary">
 					<h3 class="text-center ">Passo 1</h3>
 					<h4 class="text-center">Configure um email e senha válidos</h4>
@@ -117,6 +100,9 @@
 						E para manter a aplicação mais segura e que não ocorra nenhum tipo de vazamento de dados, sempre quando for utilizar o Send mail, preencha corretamente os dois formulários, já que não armazenamos e nem recuperamos os dados do usuário em nenhum banco de dados, cache, cookies... É necessário que sempre preencha os campos de login e senha quando for utilizar o app.
 					</p>
 				</div>
+				<!-- / Passo 1 -->
+
+				<!-- Passo 2 -->
 				<div class="col-md-6 mt-4 border-left border-primary">
 					<h3 class="text-center">Passo 2</h3>
 					<h4 class="text-center">Envie seus emails</h4>
@@ -129,70 +115,102 @@
 						Clique em 'Enviar mensagem' e confira se você foi levado para a página de sucesso, recomendo enviar um e-mail para você mesmo como um teste :D !
 					</p>
 				</div>
+				<!-- / Passo 2 -->
 	      </div>
-	   </div>
+	   </section>
 	   <!-- / Como usar -->
 
-		<!-- Form  -->
-		<div id="aplicativo" class="container-fluid">
+		<!-- Container Form  -->
+		<section id="aplicativo" class="container-fluid">
+			<!-- Header -->
 			<div id="div-header" class="py-3 text-center">
 				<img class="d-block mx-auto mb-2" src="./assets/logo.png" alt="Send Mail logo" width="72" height="72">
 				<h2>Send mail</h2>
 				<p class="lead">Seu app de envio de e-mails particular</p>
-				<p class="lead ref">Developed by 
-					<a href="https://linktr.ee/GilbertoASJ" target="blank_">
-						Gilberto Alves
-					</a>
-				</p>
 			</div>
+			<!-- / Header -->
 
-      	<div class="row">
-      		
-      		<div class="col-md-6">
+			<!-- Div form -->
+			<div id="div-form" class="card-body font-weight-bold row">
+				<form action="send-proccess.php" method="post" class="d-flex">
 
-					<div id="div-form" class="card-body font-weight-bold">
-						<form action="send-proccess.php" method="post">
-
-							<div class="form-group">
-								<label for="para">Para</label>
+					<div id="primeiro-formulario" class="col">
+						<div class="form-group">
+							<label for="email">Email</label>
 								<input 
-									name="para" 
+									name="email" 
 									type="email" 
 									class="form-control" 
-									id="para" 
-									placeholder="nome@dominio.com.br"
+									id="email" 
+									placeholder="Seu email aqui"
 								>
-							</div>
+						</div>
 
-							<div class="form-group">
-								<label for="assunto">Assunto</label>
+						<div class="form-group">
+							<label for="senha">Senha</label>
 								<input 
-									name="assunto" 
-									type="text" 
+									name="senha" 
+									type="password" 
 									class="form-control" 
-									id="assunto" 
-									placeholder="Assundo do e-mail"
+									id="senha" 
+									placeholder="Sua senha aqui"
 								>
-							</div>
-
-							<div class="form-group">
-								<label for="mensagem">Mensagem</label>
-								<textarea 
-									name="mensagem" 
-									placeholder="Mensagem do e-mail" 
-									class="form-control" 
-									id="mensagem"
-									rows="3" 
-								>
-								</textarea>
-							</div>
-
-							<button type="submit" class="btn btn-color btn-lg">Enviar Mensagem</button>
-						</form>
+								<p class="text-secondary mt-3">Não se esqueça de após colocar e-mail e senha válidos, <a href="#como-usar">permitir o acesso da aplicação no seu Gmail.</a></p>
+						</div>
 					</div>
-				</div>
-      	</div>
-      </div>
+
+					<div id="segundo-formulario"  class="col">
+						<div class="form-group">
+							<label for="para">Para</label>
+							<input 
+								name="para" 
+								type="email" 
+								class="form-control" 
+								id="para" 
+								placeholder="nome@dominio.com.br"
+							>
+						</div>
+
+						<div class="form-group">
+							<label for="assunto">Assunto</label>
+							<input 
+								name="assunto" 
+								type="text" 
+								class="form-control" 
+								id="assunto" 
+								placeholder="Assundo do e-mail"
+							>
+						</div>
+
+						<div class="form-group">
+							<label for="mensagem">Mensagem</label>
+							<textarea 
+								name="mensagem" 
+								placeholder="Mensagem do e-mail" 
+								class="form-control" 
+								id="mensagem"
+								rows="3" 
+							>
+							</textarea>
+						</div>
+
+						<button type="submit" class="btn btn-color btn-lg">Enviar Mensagem</button>
+					</div>
+				</form>
+			</div>
+			<!-- / Div form -->
+      </section>
+      <!-- / Container Form  -->
+
+      <!-- Footer -->
+      <footer class="pt-2 pb-2 bg-blue container-fluid">
+			<p class="lead ref text-center  text-white">Developed by 
+				<a href="https://linktr.ee/GilbertoASJ" target="blank_" class=" text-white">
+					Gilberto Alves
+				</a>
+			</p>	
+		</footer>
+		<!-- / Footer -->
 
 
       <!-- Optional JavaScript; choose one of the two! -->
