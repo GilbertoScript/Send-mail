@@ -57,7 +57,9 @@
 
 <hr>
 
--- Em construção --
+Send mail é uma aplicação web de envio de emails, que consiste basicamente em você fazer o envio de e-mails de forma rápida e simples, há responsividade no site.
+
+Alguns dos assuntos aprendidos e abordados durante a construção do projeto foram: Packagist, PHPMailer, Namespaces, etc.
 
 ### Construido com
 
@@ -70,7 +72,33 @@ As tecnologias usadas nesse projeto foram:
 <!-- GETTING STARTED -->
 ## Como usar
 
--- Em construção --
+### Passo 1 - Configure um email e senha válidos
+
+Para começar a usar o Send mail temos alguns pré-requisitos:
+
+Que você esteja planejando utilizar um Gmail, pois a aplicação ainda não possui suporte a outros tipos de serviços SMTP.
+
+Que você aceite o acesso a aplicação menos restritas no seu Gmail, por aqui não se preocupe, a aplicação é segura e você pode ativar essa funcionalidade apenas quando for mandar seus e-mails pelo Send mail.
+
+Insira e-mail e senha válidos, para que não ocorra nenhum erro ao fazer o envio dos emails.
+
+E para manter a aplicação mais segura e que não ocorra nenhum tipo de vazamento de dados, sempre quando for utilizar o Send mail, preencha corretamente os dois formulários, já que não armazenamos e nem recuperamos os dados do usuário em nenhum banco de dados, cache, cookies... É necessário que sempre preencha os campos de login e senha quando for utilizar o app.
+
+### Passo 2 - Envie seus emails
+
+Agora que já realizou a configuração, vamos enviar os emails:
+
+Não tem muito segredo, no primeiro formulário preencha login e senha com o e-mail que você configurou no passo 1.
+
+Acesse o segundo formulário, e no campo 'Para' preencha com o e-mail do destinatário(quem irá receber o seu e-mail)
+
+No campo 'Assunto' preencha com o assunto(cabeça do e-mail).
+
+E no campo 'Mensagem' preencha com a mensagem(corpo do e-mail) que você quer enviar.
+
+Clique em 'Enviar mensagem' e confira se você foi levado para a página de sucesso, recomendo enviar um e-mail para você mesmo como um teste :D !
+
+<hr>
 
 Este é um exemplo de como você pode dar instruções sobre como configurar seu projeto localmente. Para obter uma cópia local instalada e funcionando, siga estas etapas simples de exemplo.
 
